@@ -1,0 +1,8 @@
+#!/bin/sh
+
+mpv \
+	"$@" \
+	--volume=125 \
+	--video=no \
+	--shuffle \
+	--loop-playlist=inf

@@ -1,0 +1,7 @@
+#!/bin/sh
+
+mpv \
+	"$@" \
+	--volume=125 \
+	--video=no \
+	--save-position-on-quit

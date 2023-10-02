@@ -1,0 +1,13 @@
+#!/bin/sh
+
+yt-dlp \
+	"$@" \
+	--ignore-errors \
+	--download-archive yt-dlp-archive.txt \
+	--output "%(title)s.%(ext)s" \
+	--continue \
+	--progress \
+	--extract-audio \
+	--audio-format flac \
+	--audio-quality 0 \
+	--sponsorblock-remove default
