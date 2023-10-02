@@ -2,6 +2,7 @@
 
 mpv \
 	"$@" \
-	--volume=125 \
+	--volume-max=200 \
+	--volume=150 \
 	--video=no \
 	--save-position-on-quit
