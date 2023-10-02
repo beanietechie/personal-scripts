@@ -3,11 +3,12 @@
 yt-dlp \
 	"$@" \
 	--ignore-errors \
-	--download-archive yt-dlp-archive.txt \
-	--output "[%(upload_date)s] %(title)s.%(ext)s" \
+	--download-archive archive.txt \
+	--format "ba*" \
+	--output "(%(upload_date)s) %(channel)s - %(title)s.%(ext)s" \
 	--continue \
 	--progress \
 	--extract-audio \
-	--audio-format flac \
-	--audio-quality 0 \
+	--audio-format mp3 \
+	--audio-quality 8 \
 	--sponsorblock-remove default
