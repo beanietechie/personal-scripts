@@ -2,8 +2,7 @@
 
 mpv \
 	"$@" \
-	--volume-max=150 \
-	--volume=140 \
+	--volume=70 \
 	--video=no \
 	--shuffle \
 	--loop-playlist=inf
